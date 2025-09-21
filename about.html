@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html>
+<!--style untuk keseluruhan header -->
+<header style="height: 100px;background-color: SteelBlue;text-align: center;">
+		<title>Visit Ireland Year 2024</title> 
+		<!--division/section/segment in html-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  font-size: 17px;
+}
+
+.text-block {
+  position: absolute;
+  top: 300px;
+  left: 20px;
+ background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding: 20px 200px;
+  width: 40%;
+}
+
+.container {
+  position: relative;
+  max-width: 1520px;
+  margin: 0 auto;
+}
+
+.container img {vertical-align: middle;}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px 200px;
+
+
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 30;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+</style>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 90px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.active {
+  background-color: #04AA6D;
+  color: black;
+}
+
+.tab .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 80px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover,.dropdown:hover .dropbtn {
+  background-color: #ddd;
+}
+
+
+ .dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .tab a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .tab a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tab.responsive {position: relative;}
+  .tab.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .tab.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .tab.responsive .dropdown {float: none;}
+  .tab.responsive .dropdown-content {position: relative;}
+  .tab.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {box-sizing: border-box;}
+
+.img-magnifier-container {
+  position:relative;
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 3px solid #000;
+  border-radius: 50%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 100px;
+  height: 100px;
+}
+</style>
+<script>
+function magnify(imgID, zoom) {
+  var img, glass, w, h, bw;
+  img = document.getElementById(imgID);
+  /*create magnifier glass:*/
+  glass = document.createElement("DIV");
+  glass.setAttribute("class", "img-magnifier-glass");
+  /*insert magnifier glass:*/
+  img.parentElement.insertBefore(glass, img);
+  /*set background properties for the magnifier glass:*/
+  glass.style.backgroundImage = "url('" + img.src + "')";
+  glass.style.backgroundRepeat = "no-repeat";
+  glass.style.backgroundSize = (img.width * zoom) + "px " + (img.height * zoom) + "px";
+  bw = 1;
+  w = glass.offsetWidth / 2;
+  h = glass.offsetHeight / 2;
+  /*execute a function when someone moves the magnifier glass over the image:*/
+  glass.addEventListener("mousemove", moveMagnifier);
+  img.addEventListener("mousemove", moveMagnifier);
+  /*and also for touch screens:*/
+  glass.addEventListener("touchmove", moveMagnifier);
+  img.addEventListener("touchmove", moveMagnifier);
+  function moveMagnifier(e) {
+    var pos, x, y;
+    /*prevent any other actions that may occur when moving over the image*/
+    e.preventDefault();
+    /*get the cursor's x and y positions:*/
+    pos = getCursorPos(e);
+    x = pos.x;
+    y = pos.y;
+    /*prevent the magnifier glass from being positioned outside the image:*/
+    if (x > img.width - (w / zoom)) {x = img.width - (w / zoom);}
+    if (x < w / zoom) {x = w / zoom;}
+    if (y > img.height - (h / zoom)) {y = img.height - (h / zoom);}
+    if (y < h / zoom) {y = h / zoom;}
+    /*set the position of the magnifier glass:*/
+    glass.style.left = (x - w) + "px";
+    glass.style.top = (y - h) + "px";
+    /*display what the magnifier glass "sees":*/
+    glass.style.backgroundPosition = "-" + ((x * zoom) - w + bw) + "px -" + ((y * zoom) - h + bw) + "px";
+  }
+  function getCursorPos(e) {
+    var a, x = 0, y = 0;
+    e = e || window.event;
+    /*get the x and y positions of the image:*/
+    a = img.getBoundingClientRect();
+    /*calculate the cursor's x and y coordinates, relative to the image:*/
+    x = e.pageX - a.left;
+    y = e.pageY - a.top;
+    /*consider any page scrolling:*/
+    x = x - window.pageXOffset;
+    y = y - window.pageYOffset;
+    return {x : x, y : y};
+  }
+}
+</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {box-sizing: border-box;}
+
+.img-comp-container {
+  position: relative;
+  height: 400px; /*should be the same height as the images*/
+}
+
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow:hidden;
+}
+
+.img-comp-img img {
+  display:block;
+  vertical-align:middle;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index:9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 40px;
+  height: 40px;
+  background-color: #2196F3;
+  opacity: 0.7;
+  border-radius: 50%;
+}
+</style>
+<script>
+function initComparisons() {
+  var x, i;
+  /*find all elements with an "overlay" class:*/
+  x = document.getElementsByClassName("img-comp-overlay");
+  for (i = 0; i < x.length; i++) {
+    /*once for each "overlay" element:
+    pass the "overlay" element as a parameter when executing the compareImages function:*/
+    compareImages(x[i]);
+  }
+  function compareImages(img) {
+    var slider, img, clicked = 0, w, h;
+    /*get the width and height of the img element*/
+    w = img.offsetWidth;
+    h = img.offsetHeight;
+    /*set the width of the img element to 50%:*/
+    img.style.width = (w / 2) + "px";
+    /*create slider:*/
+    slider = document.createElement("DIV");
+    slider.setAttribute("class", "img-comp-slider");
+    /*insert slider*/
+    img.parentElement.insertBefore(slider, img);
+    /*position the slider in the middle:*/
+    slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+    slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+    /*execute a function when the mouse button is pressed:*/
+    slider.addEventListener("mousedown", slideReady);
+    /*and another function when the mouse button is released:*/
+    window.addEventListener("mouseup", slideFinish);
+    /*or touched (for touch screens:*/
+    slider.addEventListener("touchstart", slideReady);
+    /*and released (for touch screens:*/
+    window.addEventListener("touchend", slideFinish);
+    function slideReady(e) {
+      /*prevent any other actions that may occur when moving over the image:*/
+      e.preventDefault();
+      /*the slider is now clicked and ready to move:*/
+      clicked = 1;
+      /*execute a function when the slider is moved:*/
+      window.addEventListener("mousemove", slideMove);
+      window.addEventListener("touchmove", slideMove);
+    }
+    function slideFinish() {
+      /*the slider is no longer clicked:*/
+      clicked = 0;
+    }
+    function slideMove(e) {
+      var pos;
+      /*if the slider is no longer clicked, exit this function:*/
+      if (clicked == 0) return false;
+      /*get the cursor's x position:*/
+      pos = getCursorPos(e)
+      /*prevent the slider from being positioned outside the image:*/
+      if (pos < 0) pos = 0;
+      if (pos > w) pos = w;
+      /*execute a function that will resize the overlay image according to the cursor:*/
+      slide(pos);
+    }
+    function getCursorPos(e) {
+      var a, x = 0;
+      e = (e.changedTouches) ? e.changedTouches[0] : e;
+      /*get the x positions of the image:*/
+      a = img.getBoundingClientRect();
+      /*calculate the cursor's x coordinate, relative to the image:*/
+      x = e.pageX - a.left;
+      /*consider any page scrolling:*/
+      x = x - window.pageXOffset;
+      return x;
+    }
+    function slide(x) {
+      /*resize the image:*/
+      img.style.width = x + "px";
+      /*position the slider:*/
+      slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+    }
+  }
+}
+</script>
+
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+</style>
+	    
+
+<body>
+
+	  
+
+	    <div class="container">
+  <img src="img/cover1.jpg" alt="sabah" style="width:100%;height: 100% background-size: 100%;background-color: WhiteSmoke;">
+  <div class="text-block">
+    <h1 style="font-family:Bowlby One SC;font-size: 70px;">IRELAND</h1>
+  </div>
+  <div class="middle">
+    <a href="history.html">
+    <div class="text">History</div>
+  </a>s
+  </div>
+</div>
+
+
+
+<div class="tab" id="myTab">
+  <a href="home.html">
+  <button class="tablinks" onclick="openCity(event, 'Home')">HOME</button>
+    </a>
+    <a href="about.html">
+  <button class="tablinks" onclick="openCity(event, 'About')">ABOUT</button>
+    </a>
+    <a href="culture.html">
+  <div class="dropdown">
+  <button class="dropbtn" onclick="openCity(event, 'Culture')">CULTURE<i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-content">
+      <a href="Literary heritage.html">Literary heritage</a>
+    </div>
+</div>
+</a>
+<div class="dropdown">
+  <a href="art.html">
+  <button class="dropbtn" onclick="openCity(event, 'Art')">ART<i class="fa fa-caret-down"></i></button>
+   <div class="dropdown-content">
+      <a href="National Gallery.html">National Gallery</a>
+      <a href="ireland's artwork.html">Ireland's Artwork</a>
+    </div>
+</div>
+</a>
+
+<div class="dropdown">
+  <a href="cuisine.html">
+  <button class="dropbtn" onclick="openCity(event, 'Cuisine')">CUISINE<i class="fa fa-caret-down"></i></button>
+   <div class="dropdown-content">
+      <a href="Irish stew.html">Irish Stew</a>
+      <a href="soda bread.html">Soda Bread</a>
+      <a href="boxty.html">Boxty</a>
+    </div>
+</div>
+</a>
+
+<div class="dropdown">
+  <a href="accomodation.html">
+  <button class="dropbtn" onclick="openCity(event, 'Accomodation')">ACCOMMODATION<i class="fa fa-caret-down"></i></button>
+   <div class="dropdown-content">
+      <a href="hotel1.html">Star Ratings</a>
+    </div>
+</div>
+</div> 
+</a>
+
+<div id="London" class="tabcontent">
+  <h3>London</h3>
+  <p>London is the capital city of England.</p>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+
+	    
+	    <div align="center" style="background-color: WhiteSmoke;">
+
+        <table>
+<tr>
+       <td> <h1 >Ireland's Map </h1>
+
+<p>Ireland's Map showing its counties, and its major cities</p>
+
+<div class="img-magnifier-container">
+  <img id="myimage" src="img/map.jpg" width="500" height="500"  >
+</div>
+</td>
+<td><p align="left" style="padding-left: 20px; font-size: 20px"><b>Ireland</b>, country of western Europe occupying five-sixths of the westernmost major island of the British Isles.It is located in the North Atlantic Ocean, in north-western Europe. It is separated from Great Britain to its east by the North Channel, the Irish Sea, and St George's Channel. Ireland is the second-largest island of the British Isles, the third-largest in Europe, and the twentieth-largest in the world.Geopolitically, the island is divided between the Republic of Ireland, a sovereign state covering five-sixths of the island, and Northern Ireland, which is part of the United Kingdom.</p>
+
+  <br>
+  <br>
+
+
+
+<h2 align="left" style="padding-left: 20px;">Ireland's Flag</h2>
+<p align="left" style="padding-left: 20px;">The flag of the Republic of Ireland is the national flag of the Republic of Ireland, also known as the tricolour.<br><b>Click the flag</b></p>
+
+<img id="myImg" src="img/flag.png" alt="It is a vertical tricolour of green, white, and orange. The flag proportion is 1:2. The green represents a Gaelic tradition while the orange represents the supporters of William of Orange. The white in the centre signifies a lasting truce between the 'Orange' and the 'Green'." align="left" style="width:100%;max-width:300px;padding-left :20px;">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+ </td>
+</tr>
+</table>
+
+<table align="left" style="padding-left: 20px;">
+  <tr>
+    <td><p align="left" style="font-size: 20px"><b>The Irish</b> are an ethnic group and nation native to the island of Ireland, who share<br>a common ancestry,history and culture.There have been humans in Ireland for about 33,000 years,<br>and it has been continuallyinhabited for more than 10,000 years.For most of Ireland's recorded history, the Irish<br>have been primarily aGaelic people. From the 9th century, small numbers ofVikings settled in Ireland,<br>becoming the Norse-Gaels.Anglo-Normans also conquered parts of Ireland in the 12th century,while England's<br>16th/17th century conquestand colonisation of Ireland brought many English and Lowland Scotsto parts of the island,<br>especially the north.Today, Ireland is made up of the Republic of Ireland and Northern Ireland.<br>The people of Northern Ireland hold various national identities including Irish, British or some combination thereof.</p></td>
+<td><h1>Irish People</h1>
+
+<p>Irish: Na Gaeil or Na hÉireannaigh</p>
+
+<div class="img-comp-container">
+  <div class="img-comp-img">
+    <img src="img/people2.jpg" width="400" height="400">
+  </div>
+  <div class="img-comp-img img-comp-overlay">
+    <img src="img/people3.jpg" width="400" height="400">
+  </div>
+</div>
+
+<script>
+/*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
+initComparisons();
+</script></td>
+  </tr>
+</table>
+
+<script>
+/* Initiate Magnify Function
+with the id of the image, and the strength of the magnifier glass:*/
+magnify("myimage", 3);
+</script>
+
+	           
+
+	        <br>
+	        <br>
+	        <br>
+          <br>
+          <br>
+	        <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+	        
+
+	    <div style=" width: 92vw;margin: 20px;font-size: 11px;color: #878787;
+    list-style-position: inside;">
+          <h1 align="center">
+              Visit Ireland Year 2024
+          </h1>
+          <br>
+          <p align="center">
+             Escape the everyday and unwind in paradise<br>-book your dream vacation today!
+          </p>
+          <br>
+          <br>
+          <h2 align="center">Contact Us</h2>
+          <p align="center">
+              For any inquiries or to plan your dream getaway in Sabah, contact us through our website and let us assist you in creating unforgettable memories!
+          </p>
+          <br>
+          <p align="center">
+              Please contact us:
+          </p>
+          <div align="center">
+          <ul>
+              <li>E-mail : visitIreland2024@gmail.com</li>
+              <li>Phone  : 03-0589568</li>
+              <li>Instagram : VisitIreland2024</li>
+              <li>Facebook :VisitIreland2024</li>
+          </ul>
+          <br>
+          <br>
+
+  <footer style=" height: 50px;padding-top: 28px;background-color: black;color: white;
+    text-align: center;">
+      &#169; 2012-2024 VisitIreland2024.com
+  </footer>
+</body>
+</html>
+
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+
+
+</style>
+<script></script>
+
+</body>
+</html>

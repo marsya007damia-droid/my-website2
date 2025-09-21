@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<!--style untuk keseluruhan header -->
+<header style="height: 100px;background-color: SlateGrey;text-align: center;">
+    <title>Visit Ireland Year 2024</title> 
+    <!--division/section/segment in html-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  font-size: 17px;
+}
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: SlateGrey;
+  font-family: Helvetica, sans-serif;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+</style>
+
+<style>
+.button {
+  position: relative;
+  background-color: wheat;
+  border: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button:after {
+  content: "";
+  background: Tan;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+</style>
+</head>
+<body>
+
+  <div>
+  <img class= "container" src="img/history1.jpg" alt="sabah" style="width:100%;height: 100% background-size: 100%;background-color: WhiteSmoke;">
+  
+
+<div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h2>BCE : 2000</h2>
+      <p>Bronze tools and weapons begin to be used in Ireland.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>600</h2>
+      <p>The Iron Age begins. Celtic peoples begin to arrive on the island from mainland Europe.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>200</h2>
+      <p>Ireland is ruled by a large number of small kingdoms.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>CE : 220</h2>
+      <p>According to legend, Cormac mac Airt rules Ireland as the High King.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>378</h2>
+      <p>Niall of the Nine Hostages becomes High King.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>432</h2>
+      <table><tr><td>
+      <p>Saint Patrick arrives in Ireland and introduces Christianity.</td><td><img src="img/history.jpg"></p>
+      </tr></table>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>461</h2>
+      <p>Saint Patrick dies.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>759</h2>
+      <table><tr><td>
+      <p>The Vikings invade Ireland attacking monasteries and towns along the coast</p></td><td><img src="img/viking.jpg"></td>
+      </tr></table>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>900s</h2>
+      <p>The Vikings establish settlements in Ireland in the early 900s including the city of Dublin.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>1014</h2>
+       <table><tr><td>
+      <p>The Vikings are defeated by Irish King Brian Boru.</p></td><td><img src="img/brian.jpg"></td>
+      </tr></table>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>1171</h2>
+      <p>King Henry II of England comes to Ireland and claims the land as part of his empire.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>1177</h2>
+      <p>Prince John Lackland is made Lord of Ireland by King Henry II.</p>
+      </tr></table>
+    </div>
+  </div>
+
+
+  <div class="container left">
+    <div class="content">
+      <h2>1204</h2>
+      <p> Dublin Castle is built by King John of England.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>1216</h2>
+      <p>King Henry III issues the Great Charter of Ireland.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>1297</h2>
+      <p>The first meeting of the Irish Parliament in Dublin.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>1315</h2>
+      <p>Scottish leader Edward Bruce arrives to help fight against the Norman leaders.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>1348</h2>
+      <table><tr><td><img src="img/black death.jpg" style="width: 15vw;height: 20vh;"></td>
+      <td><p>The Black Plague strikes Ireland killing around 30% of the population.</p></td>
+      </tr></table>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>1366</h2>
+      <p>The Statutes of Kilkenny are passed to keep the English and Irish cultures from merging. The English and Irish are forbidden to intermarry.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>1446</h2>
+      <p>The Blarney Stone is set into a tower of Blarney Castle.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>1534</h2>
+      <p>TThomas FitzGerald rebels against England. He is hung for his offenses three years later.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>1542</h2>
+      <table><tr><td><img src="img/king.jpg"></td>
+      <td><p>The Kingdom of Ireland is established with King Henry VIII of England as king.</p></td>
+      </tr></table>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>1547</h2>
+      <p> King Henry VIII dies.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>1594</h2>
+      <p>The Nine Years' War begins between Ireland and England. The Irish are eventually defeated.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>1601</h2>
+      <p>The Irish led by Hugh O'Neill are defeated at the Battle of Kinsale.</p>
+      </tr></table>
+    </div>
+  </div>
+
+
+
+
+ <div class="container left">
+    <div class="content">
+      <h2>1607</h2>
+      <p> Many of the Irish Earls flee to Spain in what is called the "Flight of the Earls."</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>1609</h2>
+      <p>Many of the Irish Earls flee to Spain in what is called the "Flight of the Earls."</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>1689</h2>
+      <p>The Williamite War begins between the Jacobites (Catholics) and the Williamites (Protestants). The Williamites win.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>1740</h2>
+      <p>Terrible famine strikes the land and hundreds of thousands die.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>1798</h2>
+      <table><tr><td><img src="img/black death.jpg" style="width: 15vw;height: 20vh;"></td>
+      <td><p>The Irish rebel with the help of the French.</p></td>
+      </tr></table>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>1800</h2>
+      <p>The Kingdom of Ireland becomes part of the United Kingdom of Great Britain and Ireland.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>1829</h2>
+      <p>Catholics are given more freedoms through the Catholic Relief Act.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>1834</h2>
+      <p>The first commercial railroad opens in Ireland.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>1845</h2>
+  <p>The Great Irish Famine occurs when much of the potato crop is destroyed. Many Irish emigrate to other countries such as the United States.
+</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>1867</h2>
+      <p> The Irish Republican Brotherhood rebels against British rule in what is called the Fenian Rising.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>1914</h2>
+      <p>The Nine Years' War begins between Ireland and England. The Irish are eventually defeated.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>1916</h2>
+      <p>The Easter Rising occurs. Members of the Irish Republican Brother seize government buildings in Dublin. Most of the rebel leaders are executed by the British.</p>
+    </div>
+  </div>
+
+
+  <div class="container left">
+    <div class="content">
+      <h2>1919</h2>
+      <p> Irish rebels called the Sinn Fein declare independence from Britain. The Irish Republican Army (IRA) begins to fight against British forces.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>1921</h2>
+      <p>Northern Ireland is established as part of the United Kingdom. The rest of Ireland becomes the Irish Free State.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>1922</h2>
+      <p>Civil war breaks out between the Irish Republican Army (IRA) and the National Army.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>1937</h2>
+      <p>The Irish Free State is named Ireland by a new constitution.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>1949</h2>
+  <p>Ireland is declared a free republic.</p></td>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>1955</h2>
+      <p>Ireland joins the United Nations.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>1969</h2>
+      <p>The Troubles begin in Northern Ireland between the IRA and the loyalists. Constant violence between the two groups exists up until 1998.
+</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>1990</h2>
+      <p>Mary Robinson is elected President of Ireland. She is the first woman president of the country.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>1998</h2>
+  <p> The Belfast Agreement is signed reducing the violence and putting an end to The Troubles.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2002</h2>
+      <p> Ireland adopts the Euro as its official currency.</p>
+    </div>
+  </div>
+</div>
+<br>
+<a href="home.html">
+<button class="button">Back</button>
+</a>
+<br>
+          <br>
+          <br>
+          
+          
+
+      <div style=" width: 92vw;margin: 20px;font-size: 11px;color: white;
+    list-style-position: inside;">
+          <h1 align="center">
+              Visit Ireland Year 2024
+          </h1>
+          <br>
+          <p align="center">
+             Escape the everyday and unwind in paradise<br>-book your dream vacation today!
+          </p>
+          <br>
+          <br>
+          <h2 align="center">Contact Us</h2>
+          <p align="center">
+              For any inquiries or to plan your dream getaway in Sabah, contact us through our website and let us assist you in creating unforgettable memories!
+          </p>
+          <br>
+          <p align="center">
+              Please contact us:
+          </p>
+          <div align="center">
+          <ul>
+              <li>E-mail : visitIreland2024@gmail.com</li>
+              <li>Phone  : 03-0589568</li>
+              <li>Instagram : VisitIreland2024</li>
+              <li>Facebook :VisitIreland2024</li>
+          </ul>
+          <br>
+          <br>
+
+  <footer style=" height: 50px;padding-top: 28px;background-color: black;color: white;
+    text-align: center;">
+      &#169; 2012-2024 VisitIreland2024.com
+  </footer>
+</body>
+</html>
+
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+
+
+</style>
+<script></script>
+
+</body>
+</html>
+
+
+</body>
+</html>

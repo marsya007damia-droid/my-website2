@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!--style untuk keseluruhan header -->
+<header style="height: 100px;background-color: WhiteSmoke;text-align: center;">
+    <title>Visit Ireland Year 2024</title> 
+    <!--division/section/segment in html-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  font-size: 17px;
+}
+
+.text-block {
+  position: absolute;
+  top: 300px;
+  left: 20px;
+ background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding: 20px 200px;
+  width: 40%;
+}
+
+.container {
+  position: relative;
+  max-width: 1520px;
+  margin: 0 auto;
+}
+
+.container img {vertical-align: middle;}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px 200px;
+
+
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 30;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+</style>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 90px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.active {
+  background-color: #04AA6D;
+  color: black;
+}
+
+.tab .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 80px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover,.dropdown:hover .dropbtn {
+  background-color: #ddd;
+}
+
+
+ .dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .tab a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .tab a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tab.responsive {position: relative;}
+  .tab.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .tab.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .tab.responsive .dropdown {float: none;}
+  .tab.responsive .dropdown-content {position: relative;}
+  .tab.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+
+
+
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.col-container {
+  display: table;
+  width: 100%;
+}
+.col {
+  display: table-cell;
+  padding: 16px;
+}
+</style>
+</head>
+
+<body>
+
+
+  <div class="container">
+  <img src="img/cover1.jpg" alt="sabah" style="width:100%;height: 100% background-size: 100%;background-color: WhiteSmoke;">
+  <div class="text-block">
+    <h1 style="font-family:Bowlby One SC;font-size: 70px;">IRELAND</h1>
+  </div>
+  <div class="middle">
+    <a href="history.html">
+    <div class="text">History</div>
+  </div>
+</div>
+</a>
+
+
+
+<div class="tab" id="myTab">
+  <a href="home.html">
+  <button class="tablinks" onclick="openCity(event, 'Home')">HOME</button>
+    </a>
+    <a href="about.html">
+  <button class="tablinks" onclick="openCity(event, 'About')">ABOUT</button>
+    </a>
+    <a href="culture.html">
+  <div class="dropdown">
+  <button class="dropbtn" onclick="openCity(event, 'Culture')">CULTURE<i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-content">
+      <a href="Literary heritage.html">Literary heritage</a>
+    </div>
+</div>
+</a>
+<div class="dropdown">
+  <a href="art.html">
+  <button class="dropbtn" onclick="openCity(event, 'Art')">ART<i class="fa fa-caret-down"></i></button>
+   <div class="dropdown-content">
+      <a href="National Gallery.html">National Gallery</a>
+      <a href="ireland's artwork.html">Ireland's Artwork</a>
+    </div>
+</div>
+</a>
+
+<div class="dropdown">
+  <a href="cuisine.html">
+  <button class="dropbtn" onclick="openCity(event, 'Cuisine')">CUISINE<i class="fa fa-caret-down"></i></button>
+   <div class="dropdown-content">
+      <a href="Irish stew.html">Irish Stew</a>
+      <a href="soda bread.html">Soda Bread</a>
+      <a href="boxty.html">Boxty</a>
+    </div>
+</div>
+</a>
+
+<div class="dropdown">
+  <a href="accomodation.html">
+  <button class="dropbtn" onclick="openCity(event, 'Accomodation')">ACCOMMODATION<i class="fa fa-caret-down"></i></button>
+   <div class="dropdown-content">
+      <a href="hotel1.html">Star Ratings</a>
+    </div>
+</div>
+</div> 
+</a>
+
+<div id="London" class="tabcontent">
+  <h3>London</h3>
+  <p>London is the capital city of England.</p>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+
+      
+      <div align="center" style="background-color: WhiteSmoke;">
+        <br>
+        <br>
+        <h2>National Gallery of Ireland</h2>
+        <br>
+<p>With entrances on both Merrion Square and Clare Street, the National Gallery is the leading home of art in Dublin – and in Ireland.<br>With the exception of some special exhibitions, admission is free for all. Here are just four of the masterpieces you can see on display there.</p>
+
+<div class="col-container">
+  <div class="col" style="background:LightBlue">
+     <img src="img/artss6.jpg" alt="Mountains" style="width:100%">
+    <h2> Jack B. Yeats – The Liffey Swim</h2>
+    <p>This expressionist painting from 1923 captures the excited crowd attending The Liffey Swim – an annual swimming event that continues in Dublin to this very day.
+
+The scene shows the vantage point of ordinary spectators who lined the city’s river, leaning over the walls to catch a glimpse of the race.
+
+Interestingly, it was for this painting that Yeats won a silver medal in the Olympic games which – between 1912 and 1948 – featured artists, as well as athletes. The catch? All the art had to depict sporting scenes.
+
+Yeats also painted himself into the scene. He is the man in the brown fedora, while his wife Cottie is the lady in the yellow hat. It’s also worth noting that the bridge in the distance is O’Connell Bridge.</p>
+  </div>
+
+  <div class="col" style="background:PaleTurquoise">
+    <img src="img/artss7.jpg" alt="Lights" style="width:100%">
+    <h2>JMW Turner – A Ship Against the Mew Stone, at the Entrance to Plymouth Sound</h2>
+    <p>Every year, for January only, Turner’s watercolours go on display at the National Gallery. In accordance with the stipulations of art collector Henry Vaughan, who bequeathed 31 of his paintings and sketches to the gallery in 1900, this is when the natural light levels are lowest.
+
+Painted in 1814, this particular Turner painting depicts the drama of a ship as it battles the roiling sea to pass the Mew Stone – where many lives had been lost.
+
+The English Romantic painter was relentless in his pursuit of light and atmosphere. He became known as a master of capturing the energy of storms at sea. At the age of 67, he is said to have tied himself to the mast of a ship during a storm to experience the elements directly.</p>
+  </div>
+
+  <div class="col" style="background:LightBlue">
+     <img src="img/artss8.jpg" alt="Nature" style="width:100%">
+    <h2>Claude Monet – Argenteuil Basin with a Single Sailboat</h2>
+    <p>The famous French impressionist painted this autumn scene in 1874 during his residence at Argenteuil on the banks of the Seine. Here, he painted from a boat which he used as a floating studio.
+
+The painting is worth €10 million. Rather shockingly, in 2012, a visitor to the gallery punched the painting in an act of vengeance against the state. The incident resulted in an extensive tear but, after eighteen months of restoration, the piece was returned to the National Gallery where it is now displayed behind glass. The culprit was jailed for five years.
+
+</p>
+  </div>
+</div>
+<br>
+          <br>
+          <br>
+          
+          
+
+      <div style=" width: 92vw;margin: 20px;font-size: 11px;color: #878787;
+    list-style-position: inside;">
+          <h1 align="center">
+              Visit Ireland Year 2024
+          </h1>
+          <br>
+          <p align="center">
+             Escape the everyday and unwind in paradise<br>-book your dream vacation today!
+          </p>
+          <br>
+          <br>
+          <h2 align="center">Contact Us</h2>
+          <p align="center">
+              For any inquiries or to plan your dream getaway in Sabah, contact us through our website and let us assist you in creating unforgettable memories!
+          </p>
+          <br>
+          <p align="center">
+              Please contact us:
+          </p>
+          <div align="center">
+          <ul>
+              <li>E-mail : visitIreland2024@gmail.com</li>
+              <li>Phone  : 03-0589568</li>
+              <li>Instagram : VisitIreland2024</li>
+              <li>Facebook :VisitIreland2024</li>
+          </ul>
+          <br>
+          <br>
+
+  <footer style=" height: 50px;padding-top: 28px;background-color: black;color: white;
+    text-align: center;">
+      &#169; 2012-2024 VisitIreland2024.com
+  </footer>
+</body>
+</html>
+
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+
+
+</style>
+<script></script>
+
+</body>
+</html>
